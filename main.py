@@ -28,7 +28,8 @@ for row in range(8):
             elif row > 4: board[row][col] = 0
 
 clicked = False
-while True:
+running = True
+while running:
     for event in pg.event.get():
         if event.type == pg.QUIT:
             running = False
